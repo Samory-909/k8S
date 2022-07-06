@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+ name: my-deployment
+spec:
+ selector:
+  matchLabels:
+   app: myapp
+ replicas: 2
+ template:
+  metadata:
+   labels:
+    app: myapp
+  spec:
+   containers:
+   - name: myapp-k8s
+     image: houcemserver/myapp:k8s
