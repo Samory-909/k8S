@@ -1,0 +1,6 @@
+---
+- name: apache
+  hosts: 146.59.157.126
+  become: true
+  roles: 
+  - geerlingguy.apache

@@ -1,0 +1,6 @@
+---
+- name: roles_posgresql
+  hosts: 146.59.157.126
+  become: true
+  roles:
+  - geerlingguy.postgresql

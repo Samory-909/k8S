@@ -1,0 +1,10 @@
+---
+- name: "print ansible_hostname variable play"
+  hosts: all
+  become: true
+  gather_facts: True
+  tasks:
+    - name: "print ansible_hostname variable task"
+      debug:
+        msg: "{{ ansible_hostname }} la distribution major {{ansible_distribution}}et le facter {{ansible_distribution_version}}"
+
